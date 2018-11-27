@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd" >
+<struts>
+	<package name="day1" extends="struts-default" namespace="/ns">
+		<action name="student_*" class="sa" method="{1}">
+		<result name="qu">/queryAll.jsp</result>
+		<result name="quone" >/modify.jsp</result>
+		<result name="mo" type="redirectAction">student_queryAll</result>
+		<result name="des" type="redirectAction">student_queryAll</result> 
+		<result name="reg" type="redirectAction">student_queryAll</result> 
+		
+		</action>
+	
+	
+	</package>
+
+
+</struts>
